@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SquadWatch — watch up to 4 YouTube live streams at once</title>
+  <meta name="description" content="SquadWatch is a free desktop app for macOS and Windows that plays up to four YouTube live streams side by side, with per-stream sound and a chat you can switch between channels.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='3' width='12' height='12' rx='3' fill='%23ff5c7a'/%3E%3Crect x='17' y='3' width='12' height='12' rx='3' fill='%234da3ff'/%3E%3Crect x='3' y='17' width='12' height='12' rx='3' fill='%23ffc23d'/%3E%3Crect x='17' y='17' width='12' height='12' rx='3' fill='%2338d39f'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="./">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="12" height="12" rx="3" fill="#ff5c7a"/><rect x="17" y="3" width="12" height="12" rx="3" fill="#4da3ff"/><rect x="3" y="17" width="12" height="12" rx="3" fill="#ffc23d"/><rect x="17" y="17" width="12" height="12" rx="3" fill="#38d39f"/><path d="M7.5 6.5v5l4.2-2.5z" fill="#181715"/></svg>
+        SquadWatch
+      </a>
+      <nav class="nav">
+        <a class="hide-sm" href="#features">Features</a>
+        <a href="#google">Your Google account</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="#" data-gh="releases">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="wrap">
+        <h1>Watch the whole squad at once</h1>
+        <p class="lead">SquadWatch is a free desktop app for macOS and Windows that plays up to four YouTube live streams side by side — so when your favorite streamers play together, you see every point of view.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#" data-gh="releases">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+            Download for macOS &amp; Windows
+          </a>
+          <a class="btn btn-ghost" href="#google">How sign-in works</a>
+        </div>
+        <p class="fine">No installer — just open the app. Sign in with Google is optional.</p>
+
+        <div class="preview" role="img" aria-label="Illustration of the SquadWatch window: sidebar of channels, four video tiles, and a chat panel">
+          <div class="pv-side">
+            <div class="pv-label">Subscriptions</div>
+            <div class="pv-row"><span class="pv-dot" style="--c:#ff3d47"></span><span class="pv-line"></span></div>
+            <div class="pv-row"><span class="pv-dot" style="--c:#ff3d47"></span><span class="pv-line"></span></div>
+            <div class="pv-row"><span class="pv-dot" style="--c:#ff3d47"></span><span class="pv-line"></span></div>
+            <div class="pv-row"><span class="pv-dot"></span><span class="pv-line" style="max-width:70%"></span></div>
+            <div class="pv-row"><span class="pv-dot"></span><span class="pv-line" style="max-width:55%"></span></div>
+            <div class="pv-row"><span class="pv-dot"></span><span class="pv-line" style="max-width:80%"></span></div>
+            <div class="pv-label">Squads</div>
+            <div class="pv-row"><span class="pv-line" style="max-width:60%"></span></div>
+          </div>
+          <div class="pv-grid">
+            <div class="pv-tile on" style="--c:var(--slot-1)"><div class="pv-bar"><span class="pv-num"></span><span class="pv-line"></span></div><div class="pv-video" style="--g1:#4b6b3a;--g2:#0d1410"></div></div>
+            <div class="pv-tile" style="--c:var(--slot-2)"><div class="pv-bar"><span class="pv-num"></span><span class="pv-line"></span></div><div class="pv-video" style="--g1:#3b4f78;--g2:#0b0e17;--x:70%"></div></div>
+            <div class="pv-tile" style="--c:var(--slot-3)"><div class="pv-bar"><span class="pv-num"></span><span class="pv-line"></span></div><div class="pv-video" style="--g1:#7a4b2b;--g2:#120b07"></div></div>
+            <div class="pv-tile" style="--c:var(--slot-4)"><div class="pv-bar"><span class="pv-num"></span><span class="pv-line"></span></div><div class="pv-video" style="--g1:#2f6b5a;--g2:#07120f;--x:60%"></div></div>
+          </div>
+          <div class="pv-chat">
+            <div class="pv-msg" style="--c:var(--slot-2)"><b></b><i></i></div>
+            <div class="pv-msg" style="--c:var(--slot-3)"><b></b><i style="max-width:60%"></i></div>
+            <div class="pv-msg" style="--c:var(--slot-1)"><b></b><i></i></div>
+            <div class="pv-msg" style="--c:var(--slot-4)"><b></b><i style="max-width:40%"></i></div>
+            <div class="pv-msg" style="--c:var(--slot-2)"><b></b><i></i></div>
+            <div class="pv-msg" style="--c:var(--slot-1)"><b></b><i style="max-width:70%"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="features">
+      <div class="wrap">
+        <h2>Made for squad streams</h2>
+        <p class="section-lead">Everything you need to follow several creators playing the same game, in one window.</p>
+        <div class="features">
+          <div class="feature"><span class="chip" style="--c:var(--slot-1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg></span>
+            <h3>Up to four streams</h3><p>A 2×2 grid, or one big stream with the others underneath. Drag tiles to rearrange them.</p></div>
+          <div class="feature"><span class="chip" style="--c:var(--slot-2)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg></span>
+            <h3>Sound per stream</h3><p>Mute, solo or set the volume of each stream. A colored ring shows which ones you can hear.</p></div>
+          <div class="feature"><span class="chip" style="--c:var(--slot-3)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+            <h3>One chat, every channel</h3><p>Flip between each streamer's live chat with one click — all chats stay loaded.</p></div>
+          <div class="feature"><span class="chip" style="--c:var(--slot-4)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8a6 6 0 0 1 0 8.4M7.8 16.2a6 6 0 0 1 0-8.4M19.1 4.9a10 10 0 0 1 0 14.2M4.9 19.1a10 10 0 0 1 0-14.2"/></svg></span>
+            <h3>See who's live</h3><p>Sign in with Google to see your subscriptions, with live channels at the top.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="google">
+      <div class="wrap google">
+        <div>
+          <h2>What SquadWatch does with your Google account</h2>
+          <p class="section-lead">Signing in is optional — you can always paste stream links instead. If you sign in, SquadWatch asks Google for <strong>read-only access to your YouTube account</strong> (<code>youtube.readonly</code>) and your basic profile, for one purpose: showing you which channels you subscribe to and which of them are live.</p>
+          <p class="section-lead">SquadWatch uses YouTube API Services. By using it you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Read the <a href="privacy.html">SquadWatch Privacy Policy</a> for the details.</p>
+        </div>
+        <ul class="facts">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Reads</strong> your subscriptions and public info about those channels and their videos.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Stays on your computer.</strong> There are no SquadWatch servers; nothing is sent to the developer.</span></li>
+          <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg><span><strong>Never</strong> posts, likes, comments, subscribes or changes anything on YouTube.</span></li>
+          <li class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg><span><strong>Never</strong> sells, shares or uses your data for ads.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Easy to undo:</strong> sign out or "Delete my data" in the app, or remove access in your <a href="https://security.google.com/settings/security/permissions">Google account settings</a>.</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <span>© <span data-year>2026</span> SquadWatch. Not affiliated with or endorsed by YouTube or Google.</span>
+      <nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="#" data-gh="issues">Contact</a></nav>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
