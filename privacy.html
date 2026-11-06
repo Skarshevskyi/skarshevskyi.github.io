@@ -22,7 +22,7 @@
   <main class="doc">
     <div class="wrap">
       <h1>Privacy Policy</h1>
-      <p class="updated">Effective November 1, 2026 · Updated November 1, 2026 to add optional chatting</p>
+      <p class="updated">Effective November 1, 2026 · Updated November 5, 2026 (added “How your data is protected”)</p>
 
       <p class="callout"><strong>The short version:</strong> SquadWatch runs entirely on your computer. If you sign in with Google, it reads your YouTube subscriptions to show you who's live. If you also turn on chatting, it posts the chat messages you type — and nothing else. Your data is never sent to the developer, never sold, never shared and never used for ads. You can remove it at any time.</p>
 
@@ -63,10 +63,24 @@
         <li><strong>Your layout and saved "squads"</strong> — the streams on screen and groups you save are kept in the app's local storage on your computer. Channel names and pictures in saved squads are refreshed from YouTube whenever you're signed in, and are removed automatically if they haven't been refreshed for 30 days.</li>
       </ul>
 
-      <h2>6. Data sent to Google and YouTube</h2>
+      <h2>6. How your data is protected</h2>
+      <p>SquadWatch is built so that your Google and YouTube data stays private and under your control:</p>
+      <ul>
+        <li><strong>No servers, no copies.</strong> SquadWatch has no backend. Your data never passes through or is stored on any server run by the developer; the developer cannot see, access or recover it.</li>
+        <li><strong>Encrypted connections.</strong> All communication with Google and YouTube uses HTTPS (TLS encryption). The app's own interface is served only to your own computer (localhost) and is not reachable from the network.</li>
+        <li><strong>Secure sign-in.</strong> You sign in on Google's own page in your web browser, using OAuth 2.0 with PKCE. SquadWatch never sees or stores your Google password.</li>
+        <li><strong>Short-lived access tokens.</strong> The access token used to call the YouTube Data API is kept only in memory and expires within an hour.</li>
+        <li><strong>Protected sign-in token.</strong> The token that keeps you signed in is stored only on your computer, in SquadWatch's settings folder inside your user account, with file permissions that allow only your user account to read it (on macOS the file is readable only by you; on Windows it is in your private user profile folder). It is revoked with Google and deleted when you sign out or choose “Delete my data”.</li>
+        <li><strong>Least privilege.</strong> SquadWatch requests read-only YouTube access by default. The permission to post chat messages is requested only if you choose “Turn on chatting”, and is used only to send messages you type.</li>
+        <li><strong>Minimal retention.</strong> Subscription and channel data is held only in memory while the app runs and is discarded when you close it or sign out. Saved squad information that hasn't been refreshed for 30 days is removed automatically.</li>
+        <li><strong>No third parties.</strong> No analytics, advertising or tracking services are built into SquadWatch, and your data is never sold, shared or transferred to anyone.</li>
+        <li><strong>Reporting a problem.</strong> If you believe you've found a security or privacy issue, please report it through the contact link below; it will be investigated and fixed promptly.</li>
+      </ul>
+
+      <h2>7. Data sent to Google and YouTube</h2>
       <p>To work, SquadWatch connects directly from your computer to Google and YouTube: to sign you in, to read your subscriptions and channel information through the YouTube Data API (and, if you turned on chatting, to post the messages you send), and to play videos and show live chat through YouTube's embedded player. The embedded player and chat are provided by YouTube, may use cookies or similar technologies, and are covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. SquadWatch itself uses no cookies for tracking, no analytics and no advertising.</p>
 
-      <h2>7. Revoking access and deleting your data</h2>
+      <h2>8. Revoking access and deleting your data</h2>
       <ul>
         <li><strong>Sign out</strong> (account menu in the sidebar): immediately revokes SquadWatch's access with Google and deletes the sign-in token and your subscription data from the app.</li>
         <li><strong>Delete my data</strong> (account menu): does the above and also erases everything SquadWatch saved on your computer — layout, squads and settings — right away.</li>
@@ -76,13 +90,13 @@
       </ul>
       <p>Because SquadWatch stores nothing outside your computer, the developer holds no copy of your data to delete. Deleting SquadWatch's data does not affect anything in your YouTube or Google account.</p>
 
-      <h2>8. Children</h2>
+      <h2>9. Children</h2>
       <p>SquadWatch is not directed at children under 13 and does not knowingly collect personal information from them.</p>
 
-      <h2>9. Changes to this policy</h2>
+      <h2>10. Changes to this policy</h2>
       <p>If this policy changes, the new version will be posted on this page with a new effective date. If a change affects how your Google or YouTube data is used, SquadWatch will ask you to review and accept the updated policy before continuing to use those features.</p>
 
-      <h2>10. Contact</h2>
+      <h2>11. Contact</h2>
       <p>Questions, concerns or complaints about privacy? Please <a href="#" data-gh="issues">open an issue on SquadWatch's GitHub page</a>.</p>
     </div>
   </main>
